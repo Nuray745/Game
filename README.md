@@ -20,11 +20,12 @@ Initial game planning created in Excalidraw:
 
 👉 Add your GitHub Pages link here:
 
-[PLAY THE GAME HERE](PASTE_YOUR_GITHUB_PAGES_LINK_HERE)
+[PLAY THE GAME HERE](https://nuray745.github.io/Game/)
 
-Example:
 
-https://yourusername.github.io/sweet-catcher/
+# 📘 AI Development Diary
+
+[Open AI_DIARY.md](./AI_DIARY.md)
 
 ---
 
@@ -156,15 +157,6 @@ AI was used for:
 
 ---
 
-# 📘 AI Development Diary
-
-👉 Add your AI_DIARY.md link here:
-
-[AI_DIARY.md](PASTE_YOUR_AI_DIARY_LINK_HERE)
-
-Example:
-
-./AI_DIARY.md
 
 ---
 
@@ -172,20 +164,10 @@ Example:
 
 ```bash
 sweet-catcher/
-│
 ├── index.html
 ├── style.css
 ├── script.js
-│
-├── assets/
-│   ├── game.png
-│   ├── donut.png
-│   ├── candy.png
-│   ├── cupcake.png
-│   ├── chili.png
-│   ├── bomb.png
-│   └── music.mp3
-│
+├── assets/          # Images (game.png, donut.png, etc.)
 └── README.md
 ```
 
@@ -242,24 +224,4 @@ During this project I learned:
 
 ---
 
-# 📌 GitHub Repository
-
-👉 Add your GitHub repository link here:
-
-[GitHub Repository](PASTE_YOUR_GITHUB_REPO_LINK_HERE)
-
-Example:
-
-https://github.com/yourusername/sweet-catcher
-
----
-
-# 🙌 Final Notes
-
-This project was created as part of the **Frontend Fundamentals Mini-Project** assignment using only:
-
-✅ HTML
-✅ CSS
-✅ Vanilla JavaScript
-
-No frameworks, libraries, or external game engines were used.
+Ready your basket and start gathering the highest score! Good luck! 🍭✨
