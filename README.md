@@ -1,40 +1,265 @@
-# 🍎 Sweet Catcher: Ready for a Sweet Adventure?
+# 🍎 Sweet Catcher
 
-Welcome to the world of **Sweet Catcher**!
+Welcome to **Sweet Catcher** — a simple and fun browser-based arcade game built with **HTML, CSS, and Vanilla JavaScript**.
 
-<p align="center">
-  <img src="assets/game.png" alt="Game Flow" width="600">
-</p>
-
-## 🎮 The Magical World of the Game
-
-At the heart of the game lies a very simple and fun mechanic:
-
-* **Start Button:** Simply click the "Start" button to begin your adventure.
-* **Falling Treasures:** Once the game starts, various items will begin to rain down from the sky every 800ms.
-* **Basket's Mission:** Your main task is to guide the basket in the right direction and "catch" the falling items before they hit the ground.
-
-## 🍭 What to Catch, What to Avoid?
-
-Be careful with the items that will fall into your basket:
-
-* **Sweets (Donut, Candy, Cupcake):** These are your best friends; each one earns you +10 points!
-* **Chili Pepper:** Stay away from this mischievous item, as it deducts 15 points from your score.
-* **Bomb:** Oh no, be careful! If you catch a bomb, you lose 1 life, and the screen will warn you (with a shake effect).
-
-## 🛑 When Does the Game End?
-
-Like all good things, you must be careful here too. The game ends in the following cases:
-* Your lives run out (Lives <= 0)
-* Your score runs out (Score <= 0)
-
-When the game ends, the "Game Over" screen opens, where you can see your high score.
-
-## 🛠️ Technical Details (What Happens in the Background?)
-
-* **Persistence:** To keep the game interesting, your high scores are stored in `localStorage`.
-* **Dynamic UI:** Your score and life count update in real-time on the screen within seconds.
+The goal of the game is to catch delicious sweets while avoiding dangerous objects falling from the sky. The game focuses on DOM manipulation, collision detection, animations, and game loop logic without using any external libraries or frameworks.
 
 ---
 
-Ready your basket and start gathering the highest score! Good luck! 🍭✨
+# 🖼️ Game Flow Sketch
+
+Initial game planning created in Excalidraw:
+
+<p align="center">
+  <img src="assets/game.png" alt="Game Flow Sketch" width="700">
+</p>
+
+---
+
+# 🎮 Live Demo
+
+👉 Add your GitHub Pages link here:
+
+[PLAY THE GAME HERE](PASTE_YOUR_GITHUB_PAGES_LINK_HERE)
+
+Example:
+
+https://yourusername.github.io/sweet-catcher/
+
+---
+
+# 🎯 How to Play
+
+## Controls
+
+| Key            | Action                    |
+| -------------- | ------------------------- |
+| ⬅️ Left Arrow  | Move basket left          |
+| ➡️ Right Arrow | Move basket right         |
+| Enter / Click  | Start game                |
+| Restart Button | Restart game after losing |
+
+---
+
+## Objective
+
+Catch sweets to increase your score and avoid dangerous objects.
+
+### Good Items 🍩
+
+* Donut → +10 points
+* Candy → +10 points
+* Cupcake → +10 points
+
+### Dangerous Items ⚠️
+
+* Chili Pepper → -15 points
+* Bomb → -1 life
+
+The game ends when:
+
+* Lives become 0
+* Score becomes 0 or lower
+
+Try to survive as long as possible and beat your high score!
+
+---
+
+# 🧩 Game Entities
+
+| Entity           | Description                |
+| ---------------- | -------------------------- |
+| Basket           | Controlled by the player   |
+| Donut            | Gives points               |
+| Candy            | Gives points               |
+| Cupcake          | Gives points               |
+| Chili Pepper     | Removes score              |
+| Bomb             | Removes life               |
+| Score Board      | Displays current score     |
+| Lives Counter    | Displays remaining lives   |
+| Start Screen     | Appears before game starts |
+| Game Over Screen | Appears after losing       |
+
+---
+
+# ⚙️ Technical Decisions
+
+## Programming Approach
+
+This project was built using the **Functional Programming** approach.
+
+### Why Functional?
+
+I chose the functional approach because the game is relatively small and simple.
+Using functions and objects made the game logic easier to organize, debug, and update.
+
+---
+
+## Technologies Used
+
+* HTML5
+* CSS3
+* Vanilla JavaScript
+* DOM Manipulation
+* localStorage
+* requestAnimationFrame()
+
+---
+
+# 🔄 Game Loop Logic
+
+The game uses `requestAnimationFrame()` to continuously update the game state.
+
+Main responsibilities of the game loop:
+
+* Move falling objects
+* Detect collisions
+* Update score and lives
+* Render UI updates
+* Remove missed objects
+* Check game over conditions
+
+---
+
+# 💾 Persistence
+
+The game stores the player's highest score using `localStorage`.
+
+This allows the high score to remain saved even after refreshing or reopening the browser.
+
+---
+
+# 🎵 Sound & Music
+
+Background music and sound effects were added to improve the gameplay experience and make the game more interactive and enjoyable.
+
+---
+
+# 🤖 AI-Assisted Development
+
+This project was developed with the help of free AI tools.
+
+## AI Tools Used
+
+* ChatGPT Free
+* Gemini Free
+
+## Why AI Was Used
+
+AI was used for:
+
+* Brainstorming gameplay ideas
+* Debugging JavaScript logic
+* Improving collision detection
+* Organizing project structure
+* Fixing CSS layout issues
+
+---
+
+# 📘 AI Development Diary
+
+👉 Add your AI_DIARY.md link here:
+
+[AI_DIARY.md](PASTE_YOUR_AI_DIARY_LINK_HERE)
+
+Example:
+
+./AI_DIARY.md
+
+---
+
+# 📂 Project Structure
+
+```bash
+sweet-catcher/
+│
+├── index.html
+├── style.css
+├── script.js
+│
+├── assets/
+│   ├── game.png
+│   ├── donut.png
+│   ├── candy.png
+│   ├── cupcake.png
+│   ├── chili.png
+│   ├── bomb.png
+│   └── music.mp3
+│
+└── README.md
+```
+
+---
+
+# 🚀 Features
+
+* Player movement
+* Falling object system
+* Collision detection
+* Score system
+* Life system
+* Start screen
+* Game over screen
+* Restart functionality
+* High score saving
+* Shake animation effect
+* Background music and sound effects
+* Dynamic UI updates
+
+---
+
+# 🐞 Known Bugs / Future Improvements
+
+## Known Bugs
+
+* Sometimes objects may slightly overlap before collision triggers.
+* Rapid object spawning can occasionally make the game too difficult.
+
+---
+
+## Future Improvements
+
+* Add different game levels with increasing difficulty
+* Improve enemy and object balancing
+* Add more visual effects and animations
+* Add pause functionality
+* Add mobile support
+* Add power-ups and special bonuses
+
+---
+
+# 🧠 What I Learned
+
+During this project I learned:
+
+* DOM manipulation
+* Collision detection logic
+* Managing game state
+* Using localStorage
+* Structuring JavaScript projects
+* Debugging with AI assistance
+* Creating a game loop with requestAnimationFrame()
+
+---
+
+# 📌 GitHub Repository
+
+👉 Add your GitHub repository link here:
+
+[GitHub Repository](PASTE_YOUR_GITHUB_REPO_LINK_HERE)
+
+Example:
+
+https://github.com/yourusername/sweet-catcher
+
+---
+
+# 🙌 Final Notes
+
+This project was created as part of the **Frontend Fundamentals Mini-Project** assignment using only:
+
+✅ HTML
+✅ CSS
+✅ Vanilla JavaScript
+
+No frameworks, libraries, or external game engines were used.
